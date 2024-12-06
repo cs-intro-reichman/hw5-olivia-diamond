@@ -83,7 +83,7 @@ public class MyString {
             }
 
             if (str.length()==0) {
-                return " ";
+                return "";
             }
 
         String newStr = sb.toString();
