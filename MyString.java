@@ -55,7 +55,7 @@ public class MyString {
             int freq1 = countChar(str1, str1.charAt(i));
             int freq2 = countChar(str2, str2.charAt(str2.indexOf(str1.charAt(i))));
 
-            if ( freq1 != freq2) {
+            if ( freq1 > freq2) {
                 return false;
             }
        }
