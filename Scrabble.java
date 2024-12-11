@@ -115,11 +115,11 @@ public class Scrabble {
 			String input = in.readString();
 			
 			if (hand.length() == 0) {
-				System.out.println("Ran out of letters. Total score: " + score + " points\n");
+				System.out.println("Ran out of letters. Total score: " + score + " points");
 			}
 
 			if (input.equals(".")) {
-				System.out.println("End of hand. Total score: " + score + " points\n");
+				System.out.println("End of hand. Total score: " + score + " points");
 				break;				
 			} else if (isWordInDictionary(input)) {
 				hand = MyString.remove(hand,input);
