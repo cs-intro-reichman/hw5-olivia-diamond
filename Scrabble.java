@@ -119,15 +119,15 @@ public class Scrabble {
 			}
 
 			if (input.equals(".")) {
-				System.out.println("End of hand. Total score: " + score + " points");
+				System.out.println("End of hand. Total score: " + score + " points\n");
 				break;				
 			} else if (isWordInDictionary(input)) {
 				hand = MyString.remove(hand,input);
 				score += wordScore(input);	
 	
-				System.out.println(input + " earned " + wordScore(input) + " points. Score: " + score + " points." );
+				System.out.println(input + " earned " + wordScore(input) + " points. Score: " + score + " points.\n" );
 			} else {
-				System.out.println( "No such word in the dictionary. Try again." );
+				System.out.println( "Invalid word. Try again." );
 			}		
 		}	
 	}
