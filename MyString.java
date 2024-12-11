@@ -135,6 +135,7 @@ public class MyString {
            
            if ( index != -1) {
             sbStr1 = sbStr1.delete(index,(index + 1)); 
+
            }
         }
        
